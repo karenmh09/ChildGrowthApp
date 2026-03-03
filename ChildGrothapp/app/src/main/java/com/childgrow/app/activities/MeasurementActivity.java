@@ -59,8 +59,6 @@ public class MeasurementActivity extends AppCompatActivity {
 
     private void loadAdapter(){
         measurementRecyclerView.setLayoutManager(new LinearLayoutManager(this));
-        noMeasurementTextView = findViewById(R.id.noChildTextView);
-
         // Set Adapter
         if (!measurements.isEmpty()) {
             noMeasurementTextView.setVisibility(RecyclerView.GONE);
