@@ -1,0 +1,17 @@
+<resources>
+    <string name="app_name">ChildGrowthApp</string>
+    <string name="no_child">No child registered yet!</string>
+    <string name="no_measurement">No measurements registered yet!</string>
+    <string name="add_child_description">Add Child Button</string>
+    <string name="add_measurement_description">Add Measurement Button</string>
+    <string name="title_activity_add_child">Add Child</string>
+    <string name="title_activity_measurements">Measurements</string>
+    <string name="child_name">Name</string>
+    <string name="due_date">Due Date:</string>
+    <string name="child_dob">Birthday</string>
+    <string name="birthday">Birthday:</string>
+    <string name="save">Save</string>
+    <string name="weight">Weight</string>
+    <string name="head">Head</string>
+    <string name="height">Height</string>
+</resources>
