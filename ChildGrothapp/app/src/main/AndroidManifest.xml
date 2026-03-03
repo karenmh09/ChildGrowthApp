@@ -13,6 +13,12 @@
         android:theme="@style/AppTheme">
 
         <activity
+            android:name=".activities.AddMeasurementActivity"
+            android:exported="false"
+            android:label="@string/title_activity_add_measurements"
+            android:theme="@style/AppTheme" />
+
+        <activity
             android:name=".activities.MeasurementActivity"
             android:exported="false"
             android:label="@string/title_activity_measurements"

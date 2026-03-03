@@ -92,7 +92,8 @@ public class MainActivity extends AppCompatActivity implements RecyclerViewClick
     @Override
     public void recyclerViewListClicked(View v, int position) {
         Intent myIntent = new Intent(MainActivity.this, MeasurementActivity.class);
-        myIntent.putExtra("MEASUREMENTS", children.get(position).getId());
+        myIntent.putExtra("CHILD_ID", children.get(position).getId());
+        myIntent.putExtra("CHILD_NAME", children.get(position).getName());
         startActivity(myIntent);
     }
 }

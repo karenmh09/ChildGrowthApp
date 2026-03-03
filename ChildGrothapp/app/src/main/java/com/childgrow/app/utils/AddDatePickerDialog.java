@@ -10,7 +10,7 @@ import androidx.fragment.app.DialogFragment;
 
 import java.util.Calendar;
 
-public class AddChildDatePickerDialog extends DialogFragment {
+public class AddDatePickerDialog extends DialogFragment {
     @NonNull
     @Override
     public Dialog onCreateDialog(@Nullable Bundle savedInstanceState) {

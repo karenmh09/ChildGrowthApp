@@ -36,10 +36,10 @@ public class MeasurementsAdapter extends RecyclerView.Adapter<MeasurementsAdapte
         public void onBindViewHolder(@NonNull MeasurementItemViewHolder holder, int position) {
             Measurement measurement = measurements.get(position);
 
-            holder.weight.setText(String.valueOf(measurement.getWeight()));
-            holder.head.setText(String.valueOf(measurement.getHead()));
-            holder.height.setText(String.valueOf(measurement.getHeight()));
-            holder.date.setText(String.valueOf(measurement.getMeasurementDate()));
+            holder.weight.setText(measurement.getWeight() + " grams");
+            holder.head.setText(measurement.getHead()+ " cm");
+            holder.height.setText(measurement.getHeight()+ " cm");
+            holder.date.setText(measurement.getMeasurementDate());
             //holder.childIcon.setImageResource(child.getIcon());
 
         }
@@ -57,9 +57,9 @@ public class MeasurementsAdapter extends RecyclerView.Adapter<MeasurementsAdapte
 
                 super(itemView);
                 //itemView.setOnClickListener(this);
-                weight = itemView.findViewById(R.id.weight);
-                head = itemView.findViewById(R.id.head);
-                height = itemView.findViewById(R.id.height);
+                weight = itemView.findViewById(R.id.weightValue);
+                head = itemView.findViewById(R.id.headValue);
+                height = itemView.findViewById(R.id.heightValue);
                 date = itemView.findViewById(R.id.measurement_date);
             }
 

@@ -1,14 +1,11 @@
 package com.childgrow.app.activities;
 
-import static androidx.core.content.ContentProviderCompat.requireContext;
-
 import android.app.DatePickerDialog;
 import android.os.Bundle;
 import android.widget.Button;
 import android.widget.DatePicker;
 import android.widget.EditText;
 import android.widget.TextView;
-import android.widget.Toast;
 
 import androidx.activity.EdgeToEdge;
 import androidx.appcompat.app.AppCompatActivity;
@@ -18,13 +15,12 @@ import com.childgrow.app.R;
 import com.childgrow.app.model.Child;
 import com.childgrow.app.model.ChildViewModel;
 import com.childgrow.app.model.ChildViewModelFactory;
-import com.childgrow.app.utils.AddChildDatePickerDialog;
+import com.childgrow.app.utils.AddDatePickerDialog;
 
 import java.text.DateFormat;
-import java.time.LocalDate;
 import java.util.Calendar;
 
-public class AddChildActivity extends AppCompatActivity implements DatePickerDialog.OnDateSetListener{
+public class AddChildActivity extends AppCompatActivity implements DatePickerDialog.OnDateSetListener {
     EditText nameEditText;
     TextView dobText, dueText;
 
@@ -69,13 +65,13 @@ public class AddChildActivity extends AppCompatActivity implements DatePickerDia
     private void addDatePickerDialog(){
         dobText.setOnClickListener(v -> {
             isDOBdateSelected = true;
-            AddChildDatePickerDialog mDatePickerDialogFragment = new AddChildDatePickerDialog();
+            AddDatePickerDialog mDatePickerDialogFragment = new AddDatePickerDialog();
             mDatePickerDialogFragment.show(getSupportFragmentManager(), "DATE_PICK");
         });
 
         dueText.setOnClickListener(v -> {
             isDOBdateSelected = false;
-            AddChildDatePickerDialog mDatePickerDialogFragment = new AddChildDatePickerDialog();
+            AddDatePickerDialog mDatePickerDialogFragment = new AddDatePickerDialog();
             mDatePickerDialogFragment.show(getSupportFragmentManager(), "DATE_PICK");
         });
     }

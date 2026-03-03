@@ -17,6 +17,7 @@ import com.childgrow.app.model.Child;
 import com.childgrow.app.model.Measurement;
 import com.childgrow.app.model.MeasurementViewModel;
 import com.childgrow.app.model.MeasurementViewModelFactory;
+import com.google.android.material.floatingactionbutton.FloatingActionButton;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -26,17 +27,26 @@ public class MeasurementActivity extends AppCompatActivity {
     private TextView noMeasurementTextView;
     private List<Measurement> measurements = new ArrayList<>();
     private MeasurementsAdapter adapter;
+    private FloatingActionButton addButton;
     private int childId;
+    private String childName;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         EdgeToEdge.enable(this);
         setContentView(R.layout.measurement_activity);
         Intent intent = getIntent();
-        childId = intent.getIntExtra("MEASUREMENTS", -1);
+        childId = intent.getIntExtra("CHILD_ID", -1);
+        childName = intent.getStringExtra("CHILD_NAME");
         measurementRecyclerView = findViewById(R.id.measurementsListRecyclerView);
         noMeasurementTextView = findViewById(R.id.noMeasurementsTextView);
-
+        addButton = findViewById(R.id.add_measurement_button);
+        addButton.setOnClickListener(v -> {
+            Intent myIntent = new Intent(MeasurementActivity.this, AddMeasurementActivity.class);
+            myIntent.putExtra("CHILD_ID", childId);
+            myIntent.putExtra("CHILD_NAME", childName);
+            startActivity(myIntent);
+        });
     }
 
     @Override
@@ -68,6 +78,5 @@ public class MeasurementActivity extends AppCompatActivity {
         } else {
             noMeasurementTextView.setVisibility(RecyclerView.VISIBLE);
         }
-
     }
 }

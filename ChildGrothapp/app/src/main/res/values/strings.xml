@@ -6,13 +6,18 @@
     <string name="add_measurement_description">Add Measurement Button</string>
     <string name="title_activity_add_child">Add Child</string>
     <string name="title_activity_measurements">Measurements</string>
+    <string name="title_activity_add_measurements">Add Measurement</string>
     <string name="child_name">Name</string>
     <string name="due_date">Due Date:</string>
     <string name="child_dob">Birthday</string>
     <string name="child_due">Due Date</string>
+    <string name="measurement_date">Measurement Date</string>
     <string name="birthday">Birthday:</string>
     <string name="save">Save</string>
     <string name="weight">Weight</string>
+    <string name="weight_hint">Weight in grams</string>
     <string name="head">Head</string>
+    <string name="head_hint">Head in cm</string>
     <string name="height">Height</string>
+    <string name="height_hint">Height in cm</string>
 </resources>

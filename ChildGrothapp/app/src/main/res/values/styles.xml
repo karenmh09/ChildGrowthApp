@@ -33,6 +33,11 @@
         <item name="android:textStyle">italic</item>
     </style>
 
+    <style name="measurementsHintText">
+        <item name="android:textSize">13sp</item>
+        <item name="android:textStyle">italic</item>
+    </style>
+
     <style name="measurementsValueText">
         <item name="android:textSize">18sp</item>
         <item name="android:textColorPrimary">@android:color/black</item>
