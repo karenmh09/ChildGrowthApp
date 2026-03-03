@@ -9,6 +9,7 @@
     <string name="child_name">Name</string>
     <string name="due_date">Due Date:</string>
     <string name="child_dob">Birthday</string>
+    <string name="child_due">Due Date</string>
     <string name="birthday">Birthday:</string>
     <string name="save">Save</string>
     <string name="weight">Weight</string>

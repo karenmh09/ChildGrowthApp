@@ -43,7 +43,7 @@
             android:layout_height="wrap_content"
             android:paddingTop="20dp"
             android:layout_marginTop="4dp"
-            android:hint="@string/child_dob"
+            android:hint="@string/child_due"
             style="@style/addChildDateText"
             android:paddingStart="3dp" />
 
